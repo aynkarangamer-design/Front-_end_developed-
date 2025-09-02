@@ -1,0 +1,142 @@
+/* General Body Style */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: white;
+  padding: 20px;
+}
+
+/* Login Page Style */
+#login-page {
+  text-align: center;
+  padding: 20px;
+}
+
+#login-page input, #login-page button {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Header with Logo */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1f1f1f;
+  padding: 20px;
+}
+
+#logo {
+  font-size: 3em;
+}
+
+/* Sidebar in Left Corner */
+aside {
+  width: 250px;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  background: #1f1f1f;
+  padding: 20px;
+  height: calc(100% - 80px);
+}
+
+aside h2 {
+  margin-bottom: 20px;
+}
+
+#logout-btn, #edit-profile-btn, #news-btn {
+  margin: 10px 0;
+  background: #333;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+#logout-btn:hover, #edit-profile-btn:hover, #news-btn:hover {
+  background: #444;
+}
+
+/* Main Content Section */
+main {
+  margin-left: 270px;
+  padding: 20px;
+}
+
+#post-box {
+  margin: 20px 0;
+}
+
+textarea {
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 12px;
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.post {
+  background: #1e1e1e;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.post img {
+  max-width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.comment-box {
+  margin-top: 10px;
+}
+
+/* Edit Profile Modal */
+#edit-profile-modal {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  width: 300px;
+  display: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  main {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  aside {
+    width: 100%;
+    position: static;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #logo {
+    font-size: 2em;
+  }
+}

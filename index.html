@@ -1,0 +1,45 @@
+<!-- Login Page -->
+<div id="login-page">
+  <h1>💻 Student Portfolio</h1>
+  <input type="text" id="username" placeholder="Enter Username">
+  <input type="password" id="password" placeholder="Enter Password">
+  <button id="login-btn">Login</button>
+</div>
+
+<!-- Dashboard Page (Visible after login) -->
+<div id="dashboard" style="display:none;">
+  <!-- Header with Logo in the Center -->
+  <header>
+    <div id="logo">💻</div>
+  </header>
+
+  <!-- Sidebar (Left Corner with Profile, Sign Out, News, Edit Profile) -->
+  <aside>
+    <h2>Dashboard</h2>
+    <p><b>Profile:</b> <span id="profile-name">Not logged in</span></p>
+    <button id="edit-profile-btn">Edit Profile</button>
+    <button id="news-btn">📰 Latest News</button>
+    <button id="logout-btn">Sign Out</button>
+  </aside>
+
+  <!-- Main Content Section (Post Box) -->
+  <main>
+    <h2>Welcome, <span id="user-welcome">User</span> 🎉</h2>
+    <div id="post-box">
+      <textarea id="post-content" placeholder="Write something..."></textarea>
+      <input type="file" id="post-image" accept="image/*">
+      <button id="post-btn">Post</button>
+    </div>
+    <div id="posts-container"></div>
+  </main>
+</div>
+
+<!-- Edit Profile Modal -->
+<div id="edit-profile-modal" style="display:none;">
+  <h2>Edit Profile</h2>
+  <input type="text" id="new-username" placeholder="Enter new username">
+  <input type="text" id="new-bio" placeholder="Enter new bio">
+  <button id="save-profile-btn">Save</button>
+  <button id="cancel-profile-btn">Cancel</button>
+</div>
+
